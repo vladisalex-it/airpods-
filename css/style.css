@@ -183,12 +183,14 @@ position: relative;
     text-align: center;
     margin: 0 auto 40px;
 }
+
 .composition__inner {
     max-width: 625px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
 }
+
 .composition__inner-text {
     display: flex;
     flex-direction: column;
@@ -206,27 +208,106 @@ position: relative;
     padding: 80px 0 100px;
     text-align: center;
 }
-.case__title {
-}
-.section__title {
-}
+
 .case__text {
     max-width: 825px;
     margin: 0 auto;
     margin-bottom: 40px;
 }
+
 .energy__title {
     padding-top: 160px;
     margin-bottom: 40px;
 }
+
 .energy__num {
     font-weight: 700;
     font-size: 210px;
     margin-bottom: 40px;
 }
 .energy__text {
-    
     max-width: 400px;
     margin: 0 auto;
 }
 
+/* audio */
+.audio {
+    position: relative;
+}
+
+.audio::before {
+    content: '';
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/audio-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    position: absolute;
+    z-index: -2;
+}
+
+.audio::after {
+    position: absolute;
+    content: '';
+    background-image: url(../images/sound.png);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: -250px;
+    height: 150vh;
+    z-index: -1;
+}
+
+.audio__inner {
+    min-height: 200vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.audio__box {
+    text-align: center;
+    color: #fff;
+    padding-bottom: 30vh;
+}
+
+.audio__text {
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #000000;
+    background-color: #fff;
+}
+
+/* footer */
+.footer {
+    position: relative;
+    z-index: -2;
+    padding: 250px 0 40px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+}
+
+.footer__text {
+    padding: 20px 0;
+}
+
+.footer__list {
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 20px;
+}
